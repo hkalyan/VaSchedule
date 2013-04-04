@@ -101,7 +101,22 @@
 	width: 24
 },
 ".tableViewWrapper": {
-    top: 43,
+    top: 60,
+},
+"#todaysEventsView": {
+    top: 10,
+    height:55
+},
+"#todaysEventsTable": {
+    top: 90,
+},
+
+"#upcomingEventsView": {
+    top: 300,
+    height:55,
+},
+"#upcomingEventsTable": {
+    top: 350,
 },
 "#eventrow": {
 	alignment: 'horizontal',

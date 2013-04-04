@@ -9,37 +9,14 @@
 	<!--	<Picker id="eventtypepicker" align ="center" top="70">   
       </Picker> -->
 		<View class="tableViewWrapper">
-			<TableView id="eventsTable" platform=android>
-				<!--<TableViewSection id='todaysEventsSections' headerTitle="Todays Events">
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Tools for Care Management, Track: VeHU | Speaker: Stephan D. Fihn, MD, MPH; Tamara L. Box, PhD"></Label>
-					<Label top="65" left="0" text="4/16/2013 1:00 PM - 2:30 PM ET"></Label>
-				</TableViewRow>
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Women's Health: Special Focus Topics April 2013"></Label>
-					<Label top="65" left="0" text="4/17/2013 - 4/17/2013"></Label>
-				</TableViewRow>
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Women's Health: Special Focus Topics April 2013"></Label>
-					<Label top="65" left="0" text="4/17/2013 - 4/17/2013"></Label>
-				</TableViewRow>
-				</TableViewSection>
-				
-				<TableViewSection headerTitle="Upcoming Events">
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Tools for Care Management, Track: VeHU | Speaker: Stephan D. Fihn, MD, MPH; Tamara L. Box, PhD"></Label>
-					<Label top="65" left="0" text="4/16/2013 1:00 PM - 2:30 PM ET"></Label>
-				</TableViewRow>
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Women's Health: Special Focus Topics April 2013"></Label>
-					<Label top="65" left="0" text="4/17/2013 - 4/17/2013"></Label>
-				</TableViewRow>
-				<TableViewRow id ="eventrow" platform=android >
-					<Label top="0" left="0" text="Women's Health: Special Focus Topics April 2013"></Label>
-					<Label top="65" left="0" text="4/17/2013 - 4/17/2013"></Label>
-				</TableViewRow>
-			</TableViewSection> -->
-			</TableView>
+			<View id="todaysEventsView" backgroundColor='#222' >
+			</View>	
+				<TableView id="todaysEventsTable" platform=android>
+				</TableView>
+			<View id="upcomingEventsView" backgroundColor='#222'>
+			</View>	
+				<TableView id="upcomingEventsTable" platform=android>
+				</TableView>
 			</View>
 		
 		<View id="bottom_toolbar" platform="android">

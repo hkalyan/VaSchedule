@@ -25,7 +25,8 @@ function Controller() {
         Titanium.Facebook.authorize();
     }
     function openAddTip() {
-        var w = Alloy.createController("addTip").getView();
+        var w = Alloy.createController("addTip").getView(), w = Alloy.createController("contactsupport").getView();
+        w.open();
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     $model = arguments[0] ? arguments[0].$model : null;
@@ -90,14 +91,34 @@ function Controller() {
     });
     $.__views.mainWin.add($.__views.searchbarandroid);
     $.__views.__alloyId2 = Ti.UI.createView({
-        top: 43,
+        top: 60,
         id: "__alloyId2"
     });
     $.__views.mainWin.add($.__views.__alloyId2);
-    $.__views.eventsTable = Ti.UI.createTableView({
-        id: "eventsTable"
+    $.__views.todaysEventsView = Ti.UI.createView({
+        top: 10,
+        height: 55,
+        id: "todaysEventsView",
+        backgroundColor: "#222"
     });
-    $.__views.__alloyId2.add($.__views.eventsTable);
+    $.__views.__alloyId2.add($.__views.todaysEventsView);
+    $.__views.todaysEventsTable = Ti.UI.createTableView({
+        top: 90,
+        id: "todaysEventsTable"
+    });
+    $.__views.__alloyId2.add($.__views.todaysEventsTable);
+    $.__views.upcomingEventsView = Ti.UI.createView({
+        top: 300,
+        height: 55,
+        id: "upcomingEventsView",
+        backgroundColor: "#222"
+    });
+    $.__views.__alloyId2.add($.__views.upcomingEventsView);
+    $.__views.upcomingEventsTable = Ti.UI.createTableView({
+        top: 350,
+        id: "upcomingEventsTable"
+    });
+    $.__views.__alloyId2.add($.__views.upcomingEventsTable);
     $.__views.bottom_toolbar = Ti.UI.createView({
         layout: "horizontal",
         height: 60,
@@ -186,14 +207,11 @@ function Controller() {
     $.__views.__alloyId6.add($.__views.settingsIcon);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    var headerview = Ti.UI.createView({
-        backgroundColor: "#222",
-        height: 80
-    }), text = Ti.UI.createLabel({
+    var todaystext = Ti.UI.createLabel({
         text: "Todays Events",
         left: 20,
         color: "#fff"
-    }), picker = Ti.UI.createPicker({
+    }), todayspicker = Ti.UI.createPicker({
         right: 20,
         height: 60
     }), data = [];
@@ -209,37 +227,62 @@ function Controller() {
     data[3] = Ti.UI.createPickerRow({
         title: "Title"
     });
-    picker.add(data);
-    picker.selectionIndicator = !0;
-    headerview.add(text);
-    headerview.add(picker);
-    var section1 = Ti.UI.createTableViewSection({
-        headerView: headerview,
-        height: "auto"
+    todayspicker.add(data);
+    todayspicker.selectionIndicator = !0;
+    $.todaysEventsView.add(todaystext);
+    $.todaysEventsView.add(todayspicker);
+    var upcomingtext = Ti.UI.createLabel({
+        text: "Upcoming Events",
+        left: 20,
+        color: "#fff"
+    }), upcomingpicker = Ti.UI.createPicker({
+        right: 20,
+        height: 60
+    }), data = [];
+    data[0] = Ti.UI.createPickerRow({
+        title: "Event Date/Time"
     });
-    for (var i = 0; i < 4; i++) section1.add(Ti.UI.createTableViewRow({
-        title: "Todays Events " + i,
-        font: {
-            fontFamily: "Helvetica Neue",
-            fontSize: 18,
-            fontWeight: "bold",
-            color: "black"
-        }
-    }));
-    var section2 = Ti.UI.createTableViewSection({
-        headerView: headerview,
-        height: "auto"
+    data[1] = Ti.UI.createPickerRow({
+        title: "Session Name"
     });
-    for (var i = 4; i < 10; i++) section2.add(Ti.UI.createTableViewRow({
-        title: "Upcoming Events " + i,
-        font: {
-            fontFamily: "Helvetica Neue",
-            fontSize: 18,
-            fontWeight: "bold",
-            color: "black"
-        }
-    }));
-    $.eventsTable.setData([ section1, section2 ]);
+    data[2] = Ti.UI.createPickerRow({
+        title: "Speaker"
+    });
+    data[3] = Ti.UI.createPickerRow({
+        title: "Title"
+    });
+    upcomingpicker.add(data);
+    upcomingpicker.selectionIndicator = !0;
+    $.upcomingEventsView.add(upcomingtext);
+    $.upcomingEventsView.add(upcomingpicker);
+    var todaysdata = [];
+    for (var i = 0; i < 4; i++) {
+        row = Ti.UI.createTableViewRow({
+            title: "Todays Events " + i,
+            font: {
+                fontFamily: "Helvetica Neue",
+                fontSize: 18,
+                fontWeight: "bold",
+                color: "black"
+            }
+        });
+        todaysdata.push(row);
+    }
+    $.todaysEventsTable.setData(todaysdata);
+    var upcomingdata = [];
+    for (var i = 4; i < 10; i++) {
+        row = Ti.UI.createTableViewRow({
+            title: "Upcoming Events " + i,
+            font: {
+                fontFamily: "Helvetica Neue",
+                fontSize: 18,
+                fontWeight: "bold",
+                color: "black"
+            }
+        });
+        upcomingdata.push(row);
+    }
+    $.upcomingEventsTable.setData(upcomingdata);
     var eventdata = [];
     eventdata[0] = Ti.UI.createPickerRow({
         title: "Show All"
@@ -273,7 +316,10 @@ function Controller() {
     $.tipIcon.addEventListener("touchend", function() {
         $.tipIcon.setImage("/images/share_64a.png");
     });
-    $.tipIcon.addEventListener("click", function() {});
+    $.tipIcon.addEventListener("click", function() {
+        var w = Alloy.createController("contactsupport").getView();
+        w.open();
+    });
     $.settingsIcon.addEventListener("touchstart", function() {
         $.settingsIcon.setImage("/images/gear_64.png");
     });

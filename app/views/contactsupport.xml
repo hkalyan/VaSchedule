@@ -1,0 +1,16 @@
+<Alloy>
+    
+           <Window id="addTipWinWrapper" modal="true" title="Contact Technical Supprot" tabBarHidden= "false">
+           		<Label id="headerLabel"/>
+           		<Label id="osInfo"/>
+           		<Label id="browserInfo"/>
+           		<Label id="flashInfo"/>
+           		<Label id="resolutionInfo"/>	
+				<Label id="userInfo" />
+				<Label id="instr_text" />
+				<TextArea id="userTip" />
+				<Button id="sendButton" />
+            </Window>
+
+   
+</Alloy>

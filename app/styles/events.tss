@@ -1,0 +1,130 @@
+"#mainWin":{
+	top: 0,
+	zIndex: 100,
+	title: 'Settings',
+	backgroundColor: '#fff',
+	backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: '50%', y: '50%' },
+        endPoint: { x: '50%', y: '50%' },
+        colors: [ '#fff', '#bbb'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    }
+},
+
+"SearchBar": {
+	height: "43", 
+	top: 0, 
+	barColor: "#003F72", 
+	showCancel: true
+},
+
+
+"#searchbutton":{
+	backgroundImage: "/images/ic_menu_search_holo_dark.png",
+	right: 5,
+	width:40,
+	height:40
+},
+
+"#searchtext":{
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_NONE,
+	rightButton: "#searchbutton",
+	textAlign:'left',
+	
+	top:10,
+	height:50,
+	bottom:5,
+	width:'80%',
+	left: 5
+	
+}
+"#searchandroid": {
+	barColor: '#003F72',
+	height: 75,
+	width:'75%',
+	top: 0,
+	hintText: 'Search'
+},
+"#searchbarandroid": {
+	backgroundColor: '#1e5799',
+	layout: 'horizontal',
+	height: 70,
+	top: 0
+},
+"WebView[platform=android]": {
+	top:25,
+	font:{
+		fontSize: Alloy.Globals.FONT_SIZE
+	}
+	
+}
+
+"#bottom_toolbar": {
+	layout: 'horizontal',
+	height: 60,
+	bottom: 0,
+	backgroundColor: '#003F72',
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'50%'},
+   		backFillStart:false}
+},
+"#bt_spacer": {
+	width: '17.69%'
+},
+"#bt_spacer[platform=android]": {
+	width: '20.69%'
+},
+".bt_icon_wrapper": {
+	width: '20%'
+},
+".bt_icon_wrapper[platform=android]": {
+	width: '16%'
+},
+"ImageView[platform=android]": {
+	top: 8,
+	bottom: 8,
+	left: 15,
+	height: 32,
+	width: 32
+},
+"ImageView": {
+	top: 8,
+	bottom: 8,
+	left: 0,
+	height: 24,
+	width: 24
+},
+".tableViewWrapper": {
+    top: 43,
+},
+"#eventrow": {
+	alignment: 'horizontal',
+	height: 90,
+	rightImage:'/images/ic_go_search_api_holo_light.png',
+	color:'#000',
+	font:{fontFamily:'Helvetica Neue',fontSize:18,fontWeight:'bold', color: 'black'},
+},
+"#articleSearchResults": {
+	footerTitle: '',
+	visible: false,
+	scrollsToTop: false,
+	
+	top: 43
+},
+"Label":{
+	color:'black',
+	left:10,
+	font:{
+		fontSize: 18
+		
+	}
+	
+}
+
+

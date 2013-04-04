@@ -1,0 +1,21 @@
+<Alloy>
+	<Window title="Welcome" platform =android id="loginWin">
+		<ScrollView>
+		<ImageView id="va_logo" image="/images/va_logo.png" />
+			<Label id="welcome_Text"></Label>
+			<TableView platform=android>
+				<TableViewRow platform=android leftImage="/images/man_64.png">
+					<TextField platform=android id="name"></TextField>
+				</TableViewRow>
+				<TableViewRow platform=android leftImage="/images/mail_64.png">
+					<TextField platform= android passwordMask =true id="password"></TextField>
+				</TableViewRow>
+				
+			</TableView>
+		
+			
+			
+			<Button id="saveButton"></Button>
+		</ScrollView>
+	</Window>
+</Alloy>

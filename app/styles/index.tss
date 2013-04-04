@@ -1,0 +1,136 @@
+"#profileSetupWin": {
+	top: 0,
+	zIndex: 100,
+	title: 'Welcome',
+	tabBarHidden: true,
+	barColor: "#003F72",
+	backgroundColor: '#fff',
+    backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: '0%', y: '50%' },
+        endPoint: { x: '50%', y: '50%' },
+        colors: [ '#fff', '#bbb'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    }
+},
+"#loginWin[platform=android]": {
+	top: 0,
+	zIndex: 100,
+	title: 'Welcome',
+	layout: 'vertical',
+	backgroundColor: '#fff',
+	navBarHidden: true
+       
+},
+"#va_logo": {
+	top: 5,
+	height: 100,
+	width: 100
+},
+"#welcome_Text": {
+	top: 130,
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	text: "Welcome to the Radiology Wiki.\nPlease setup your profile below."
+},
+
+"ScrollView":{
+	
+    width: '100%',
+    height: '100%',
+    backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '50%', y: '100%' },
+        endPoint: { x: '0%', y: '50%' },
+       colors:['#fff','#bbb'],
+    }
+	
+},
+"TableView": {
+	top: 175,
+	width: 300,
+	left:5,
+	right:5,
+	backgroundColor:'transparent',
+	rowBackgroundColor: '#fff',
+	scrollable: false
+},
+"TableViewRow": {
+	height: 40
+},
+"TableView[platform=android]": {
+	top: 200,
+	width: Ti.UI.FILL,
+	height:160,
+	backgroundColor:"#fff",
+	rowBackgroundColor: '#fff',
+	borderColor:'black',
+    borderRadius:8,
+    borderWidth:1,
+	scrollable: false
+},
+"TableViewRow[platform=android]": {
+	alignment: 'horizontal',
+	height: 80
+},
+"TextField": {
+	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_NONE,
+	color: 'black',
+	backgroundColor: 'white',
+	height: 80,
+	top: 5,
+	left: 60,
+	right: 0,
+	width: '80%',
+	clearButtonMode: 1
+},
+"#name": {
+	hintText:'Name',
+	borderStyle:  Ti.UI.INPUT_BORDERSTYLE_NONE,
+	returnKeyType:Titanium.UI.RETURNKEY_NEXT
+},
+
+"#password": {
+	hintText:'Password',
+	borderStyle:  Ti.UI.INPUT_BORDERSTYLE_NONE,
+	returnKeyType:Titanium.UI.RETURNKEY_GO
+},
+"#saveButton": {
+	title: 'Continue',
+	top: 350,
+   	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+   	borderWidth: 1,
+   	borderColor: '#000',
+   	borderRadius:10,
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'100%'},
+   		backFillStart:false},
+		shadowColor: '#000',
+		shadowOffset: {x:1,y:1},
+   	color: '#fff',
+   	width: 300,
+   	height: 50
+}
+"#saveButton[platform=android]": {
+	title: 'Continue',
+	top: 475,
+   	borderWidth: 1,
+   	borderColor: '#000',
+   	borderRadius:10,
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'100%'},
+   		backFillStart:false},
+		shadowColor: '#000',
+		shadowOffset: {x:1,y:1},
+   	color: '#fff',
+   	width: 300,
+   	height: 50
+}

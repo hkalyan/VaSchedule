@@ -32,7 +32,7 @@ function Controller() {
         id: "loginWin"
     });
     $.addTopLevelView($.__views.loginWin);
-    $.__views.__alloyId7 = Ti.UI.createScrollView({
+    $.__views.__alloyId23 = Ti.UI.createScrollView({
         width: "100%",
         height: "100%",
         backgroundGradient: {
@@ -47,9 +47,9 @@ function Controller() {
             },
             colors: [ "#fff", "#bbb" ]
         },
-        id: "__alloyId7"
+        id: "__alloyId23"
     });
-    $.__views.loginWin.add($.__views.__alloyId7);
+    $.__views.loginWin.add($.__views.__alloyId23);
     $.__views.va_logo = Ti.UI.createImageView({
         top: 5,
         height: 100,
@@ -57,7 +57,7 @@ function Controller() {
         id: "va_logo",
         image: "/images/va_logo.png"
     });
-    $.__views.__alloyId7.add($.__views.va_logo);
+    $.__views.__alloyId23.add($.__views.va_logo);
     $.__views.welcome_Text = Ti.UI.createLabel({
         top: 130,
         color: "#444",
@@ -65,15 +65,15 @@ function Controller() {
         text: "Welcome to the Radiology Wiki.\nPlease setup your profile below.",
         id: "welcome_Text"
     });
-    $.__views.__alloyId7.add($.__views.welcome_Text);
-    $.__views.__alloyId9 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId23.add($.__views.welcome_Text);
+    $.__views.__alloyId25 = Ti.UI.createTableViewRow({
         height: 80,
         alignment: "horizontal",
         leftImage: "/images/man_64.png",
-        id: "__alloyId9"
+        id: "__alloyId25"
     });
-    var __alloyId10 = [];
-    __alloyId10.push($.__views.__alloyId9);
+    var __alloyId26 = [];
+    __alloyId26.push($.__views.__alloyId25);
     $.__views.name = Ti.UI.createTextField({
         borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
         color: "black",
@@ -88,14 +88,14 @@ function Controller() {
         returnKeyType: Titanium.UI.RETURNKEY_NEXT,
         id: "name"
     });
-    $.__views.__alloyId9.add($.__views.name);
-    $.__views.__alloyId11 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId25.add($.__views.name);
+    $.__views.__alloyId27 = Ti.UI.createTableViewRow({
         height: 80,
         alignment: "horizontal",
         leftImage: "/images/mail_64.png",
-        id: "__alloyId11"
+        id: "__alloyId27"
     });
-    __alloyId10.push($.__views.__alloyId11);
+    __alloyId26.push($.__views.__alloyId27);
     $.__views.password = Ti.UI.createTextField({
         borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
         color: "black",
@@ -111,8 +111,8 @@ function Controller() {
         passwordMask: "true",
         id: "password"
     });
-    $.__views.__alloyId11.add($.__views.password);
-    $.__views.__alloyId8 = Ti.UI.createTableView({
+    $.__views.__alloyId27.add($.__views.password);
+    $.__views.__alloyId24 = Ti.UI.createTableView({
         top: 200,
         width: Ti.UI.FILL,
         left: 5,
@@ -124,10 +124,10 @@ function Controller() {
         borderColor: "black",
         borderRadius: 8,
         borderWidth: 1,
-        data: __alloyId10,
-        id: "__alloyId8"
+        data: __alloyId26,
+        id: "__alloyId24"
     });
-    $.__views.__alloyId7.add($.__views.__alloyId8);
+    $.__views.__alloyId23.add($.__views.__alloyId24);
     $.__views.saveButton = Ti.UI.createButton({
         title: "Continue",
         top: 475,
@@ -158,7 +158,7 @@ function Controller() {
         height: 50,
         id: "saveButton"
     });
-    $.__views.__alloyId7.add($.__views.saveButton);
+    $.__views.__alloyId23.add($.__views.saveButton);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.saveButton.addEventListener("touchstart", function(e) {

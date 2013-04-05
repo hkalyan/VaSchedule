@@ -1,0 +1,24 @@
+<Alloy>
+    
+           <Window id="attachmentsWrapper" modal="true" title="Attachment">
+           	
+			<TableView top="20" platform=android height="85%">
+				<TableViewRow platform=android >
+					<Label id="description" text="Attachment 1"/>
+				</TableViewRow>
+				<TableViewRow platform=android >
+					<Label id="description" text="Attachment 2"/>
+				</TableViewRow>
+					<TableViewRow platform=android >
+					<Label id="description" text="Attachment 3"/>
+				</TableViewRow>
+				<TableViewRow platform=android >
+					<Label id="description" text="Attachment 4"/>
+				</TableViewRow>
+			</TableView>
+           		<Button id="download" />
+			
+            </Window>
+
+   
+</Alloy>

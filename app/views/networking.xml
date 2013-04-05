@@ -1,0 +1,34 @@
+<Alloy>
+    
+           <Window id="networkingWrapper" modal="true" title="Online Users">
+           	
+			<TableView top="20" platform=android height="85%">
+				<TableViewRow platform=android >
+					<Label class="name" left ="5" top="5" id="name" text="Mary Lambert"/>
+					<Label class="location" left ="5" bottom="10" id="location" text="Norfolk,VA"/>
+					<Button id="email" right="5" top="5" width="30" height="30" backgroundImage="/images/mail_64.png" />
+					<Button id="sendcontact" right="110" top="2" width="30" height="30" backgroundImage="/images/sym_contact_card.png" />
+				</TableViewRow>
+				<TableViewRow platform=android >
+					<Label class="name" left ="5" top="5" id="name" text="Victor Skawrozy"/>
+					<Label class="location" left ="5" bottom="10" id="location" text="Richmond,VA"/>
+					<Button right="5" top="5" width="30" height="30" backgroundImage="/images/mail_64.png" />
+					<Button right="110" top="2" width="30" height="30" backgroundImage="/images/sym_contact_card.png" />
+				</TableViewRow>
+				<TableViewRow platform=android >
+					<Label class="name" left ="5" top="5" id="name" text="David Guetta"/>
+					<Label class="location" left ="5" bottom="10" id="location" text="Chicago,IL"/>
+					<Button right="5" top="5" width="30" height="30" backgroundImage="/images/mail_64.png" />
+					<Button right="110" top="2" width="30" height="30" backgroundImage="/images/sym_contact_card.png" />
+				</TableViewRow>
+				<TableViewRow platform=android >
+					<Label class="name" left ="5" top="5" id="name" text="Taylor Swift"/>
+					<Label class="location" left ="5" bottom="10" id="location" text="Newyork,NY"/>
+					<Button right="5" top="5" width="30" height="30" backgroundImage="/images/mail_64.png" />
+					<Button right="110" top="2"  width="30" height="30" backgroundImage="/images/sym_contact_card.png" />
+				</TableViewRow>
+			</TableView>
+            </Window>
+
+   
+</Alloy>

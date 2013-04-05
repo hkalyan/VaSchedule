@@ -1,0 +1,92 @@
+"#eventDetailsWrapper": {
+	
+	top: 0,
+	zIndex: 100,
+	layout: 'vertical',
+	backgroundColor: '#fff',
+	navBarHidden: false
+},
+"#descriptionHeader": {
+	top: 35,
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif',fontWeight: 'bold' },
+	text: "Description:"
+},
+"#description": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif' },
+	text: "The Care Assessment Need (CAN)"
+		
+},
+"#objectivesHeader": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif',fontWeight: 'bold' },
+	text: "Objectives:"
+},
+"#objectives": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif' },
+	text: "1)Acquaint the primary care leaders and care managers about the Care Assessment"
+},
+"#audienceHeader": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif',fontWeight: 'bold' },
+	text: "Audience:"
+},
+"#audience": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	font : { fontSize: 24, font: 'sans-serif' },
+	text: "Clinical staff"
+},
+"#registerButton": {
+	title: 'Register',
+   	borderColor: '#000',
+   	borderRadius:10,
+   	align:'left',
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'100%'},
+   		backFillStart:false},
+		shadowColor: '#000',
+		shadowOffset: {x:1,y:1},
+   	color: '#fff',
+   	width: 150,
+   	height: 60
+},
+"#shareButton": {
+	title: 'Share',
+   	borderColor: '#000',
+   	borderRadius:10,
+   	align:'right',
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'100%'},
+   		backFillStart:false},
+		shadowColor: '#000',
+		shadowOffset: {x:1,y:1},
+   	color: '#fff',
+   	width: 150,
+   	height: 60
+},
+"Label": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font : { fontSize: 24, font: 'sans-serif' },
+},
+

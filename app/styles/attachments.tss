@@ -1,0 +1,40 @@
+"#attachmentsWrapper": {
+	
+	top: 0,
+	zIndex: 100,
+	layout: 'vertical',
+	backgroundColor: '#fff',
+	navBarHidden: false
+},
+
+"TableViewRow":{
+	rightImage:"/images/ic_menu_attachment.png",
+	height: 50,
+},
+
+"#download": {
+	title: 'Download All',
+   	borderColor: '#000',
+   	borderRadius:10,
+   	align:'center',
+   	backgroundGradient: {
+    	type:'linear',
+   		colors:['#195280','#003F72'],
+   		startPoint:{x:0,y:0},
+   		endPoint:{x:0,y:'100%'},
+   		backFillStart:false},
+		shadowColor: '#000',
+		shadowOffset: {x:1,y:1},
+   	color: '#fff',
+   	width: 300,
+   	bottom:50,
+   	height: 60
+},
+"Label": {
+	color: "#444",
+	left:5,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font : { fontSize: 24, font: 'sans-serif' },
+},
+
+

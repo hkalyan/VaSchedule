@@ -1,0 +1,27 @@
+"#networkingWrapper": {
+	
+	top: 0,
+	zIndex: 100,
+	layout: 'vertical',
+	backgroundColor: '#fff',
+	navBarHidden: false
+},
+
+
+"TableViewRow":{
+	leftImage:"/images/presence_online.png",
+	height:80
+},
+"Label": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font : { fontSize: 24, font: 'sans-serif' },
+},
+".name":{
+	font:{fontSize:24},
+	
+},
+".location":{
+	font:{fontSize:18},
+	
+}

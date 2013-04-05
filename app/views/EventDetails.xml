@@ -1,0 +1,36 @@
+<Alloy>
+    
+           <Window id="eventDetailsWrapper" modal="true" title="Event Details">
+           	
+			<TableView platform=android height="85%">
+				<TableViewSection headerTitle="Description">
+				<TableViewRow height="80" platform=android >
+					<Label id="description" text="The Care Assessment Need (CAN) score reflects a patient’s estimated probability "/>
+				</TableViewRow>
+				</TableViewSection>
+				<TableViewSection headerTitle="Objectives">
+				<TableViewRow height="120" platform=android>
+					<Label id="description" text="1)Acquaint the primary care leaders and care managers about the Care Assessment Need Score and the Patient Care Assessment"/>
+				</TableViewRow>
+				</TableViewSection>
+				<TableViewSection headerTitle="Audience">
+				<TableViewRow height="50" platform=android>
+					<Label id="description" text="Clinical Staff"/>
+				</TableViewRow>
+				</TableViewSection>
+				<TableViewSection headerTitle="Downloads">
+				<TableViewRow id="downloads" height="50"platform=android rightImage="/images/ic_go_search_api_holo_light.png">
+					<Label left="5" id="attachments" text="Attachments"/>
+				</TableViewRow>
+				</TableViewSection>
+				<TableViewRow height="70">
+					<Button left="10" id="registerButton" />
+					<Button right="10" id="shareButton" />
+				</TableViewRow>
+			</TableView>
+           		
+			
+            </Window>
+
+   
+</Alloy>

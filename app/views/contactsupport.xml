@@ -1,6 +1,6 @@
 <Alloy>
     
-           <Window id="addTipWinWrapper" modal="true" title="Contact Technical Supprot" tabBarHidden= "false">
+           <Window id="addTipWinWrapper" title="Contact Technical Support">
            		<Label id="headerLabel"/>
            		<Label id="osInfo"/>
            		<Label id="browserInfo"/>

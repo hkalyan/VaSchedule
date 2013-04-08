@@ -29,6 +29,11 @@
 	height: 100,
 	width: 100
 },
+"#vehu_logo": {
+	top: 120,
+	height: 150,
+	width: 300
+},
 "#welcome_Text": {
 	top: 130,
 	color: "#444",
@@ -49,7 +54,7 @@
 	
 },
 "TableView": {
-	top: 175,
+	top: 225,
 	width: 300,
 	left:5,
 	right:5,
@@ -61,7 +66,7 @@
 	height: 40
 },
 "TableView[platform=android]": {
-	top: 200,
+	top: 275,
 	width: Ti.UI.FILL,
 	height:160,
 	backgroundColor:"#fff",
@@ -87,7 +92,7 @@
 	clearButtonMode: 1
 },
 "#name": {
-	hintText:'Name',
+	hintText:'Username',
 	borderStyle:  Ti.UI.INPUT_BORDERSTYLE_NONE,
 	returnKeyType:Titanium.UI.RETURNKEY_NEXT
 },
@@ -98,7 +103,7 @@
 	returnKeyType:Titanium.UI.RETURNKEY_GO
 },
 "#saveButton": {
-	title: 'Continue',
+	title: 'Login',
 	top: 350,
    	style: Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
    	borderWidth: 1,
@@ -117,7 +122,7 @@
    	height: 50
 }
 "#saveButton[platform=android]": {
-	title: 'Continue',
+	title: 'Login',
 	top: 475,
    	borderWidth: 1,
    	borderColor: '#000',

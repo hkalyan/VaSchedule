@@ -2,8 +2,8 @@
 	
 	top: 0,
 	zIndex: 100,
-	title: 'Event Details',
 	layout: 'vertical',
+	title: 'Event Details',
 	backgroundColor: '#fff',
 	navBarHidden: false
 },
@@ -51,28 +51,11 @@
 	font : { fontSize: 24, font: 'sans-serif' },
 	text: "Clinical staff"
 },
-"#registerButton": {
-	title: 'Register',
-   	borderColor: '#000',
-   	borderRadius:10,
-   	align:'left',
-   	backgroundGradient: {
-    	type:'linear',
-   		colors:['#195280','#003F72'],
-   		startPoint:{x:0,y:0},
-   		endPoint:{x:0,y:'100%'},
-   		backFillStart:false},
-		shadowColor: '#000',
-		shadowOffset: {x:1,y:1},
-   	color: '#fff',
-   	width: 150,
-   	height: 60
-},
+
 "#shareButton": {
 	title: 'Share',
    	borderColor: '#000',
    	borderRadius:10,
-   	align:'right',
    	backgroundGradient: {
     	type:'linear',
    		colors:['#195280','#003F72'],

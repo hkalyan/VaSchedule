@@ -56,11 +56,11 @@ function Controller() {
         exitOnClose: "true"
     });
     $.addTopLevelView($.__views.mainWin);
-    $.__views.__alloyId16 = Ti.UI.createTableViewRow({
-        id: "__alloyId16"
+    $.__views.__alloyId17 = Ti.UI.createTableViewRow({
+        id: "__alloyId17"
     });
-    var __alloyId17 = [];
-    __alloyId17.push($.__views.__alloyId16);
+    var __alloyId18 = [];
+    __alloyId18.push($.__views.__alloyId17);
     $.__views.searchtext = Ti.UI.createTextField({
         borderStyle: Titanium.UI.INPUT_BORDERSTYLE_NONE,
         rightButton: "#searchbutton",
@@ -72,7 +72,7 @@ function Controller() {
         left: 5,
         id: "searchtext"
     });
-    $.__views.__alloyId16.add($.__views.searchtext);
+    $.__views.__alloyId17.add($.__views.searchtext);
     $.__views.searchbutton = Ti.UI.createButton({
         backgroundImage: "/images/ic_menu_search_holo_dark.png",
         right: 5,
@@ -80,45 +80,283 @@ function Controller() {
         height: 40,
         id: "searchbutton"
     });
-    $.__views.__alloyId16.add($.__views.searchbutton);
+    $.__views.__alloyId17.add($.__views.searchbutton);
     $.__views.searchbarandroid = Ti.UI.createTableView({
         backgroundColor: "#1e5799",
         layout: "horizontal",
         height: 70,
         top: 0,
-        data: __alloyId17,
+        data: __alloyId18,
         id: "searchbarandroid"
     });
     $.__views.mainWin.add($.__views.searchbarandroid);
-    $.__views.__alloyId18 = Ti.UI.createView({
+    $.__views.__alloyId19 = Ti.UI.createView({
         top: 60,
-        id: "__alloyId18"
+        id: "__alloyId19"
     });
-    $.__views.mainWin.add($.__views.__alloyId18);
+    $.__views.mainWin.add($.__views.__alloyId19);
     $.__views.todaysEventsView = Ti.UI.createView({
         top: 10,
         height: 55,
         id: "todaysEventsView",
         backgroundColor: "#222"
     });
-    $.__views.__alloyId18.add($.__views.todaysEventsView);
+    $.__views.__alloyId19.add($.__views.todaysEventsView);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    var __alloyId20 = [];
+    __alloyId20.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 1"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    __alloyId20.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 2"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    __alloyId20.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 3"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
     $.__views.todaysEventsTable = Ti.UI.createTableView({
         top: 90,
+        data: __alloyId20,
         id: "todaysEventsTable"
     });
-    $.__views.__alloyId18.add($.__views.todaysEventsTable);
+    $.__views.__alloyId19.add($.__views.todaysEventsTable);
     $.__views.upcomingEventsView = Ti.UI.createView({
-        top: 300,
+        top: 330,
         height: 55,
         id: "upcomingEventsView",
         backgroundColor: "#222"
     });
-    $.__views.__alloyId18.add($.__views.upcomingEventsView);
+    $.__views.__alloyId19.add($.__views.upcomingEventsView);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    var __alloyId21 = [];
+    __alloyId21.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 1"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    __alloyId21.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 2"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
+    $.__views.tablerow = Ti.UI.createTableViewRow({
+        rightImage: "/images/ic_go_search_api_holo_light.png",
+        height: 80,
+        id: "tablerow"
+    });
+    __alloyId21.push($.__views.tablerow);
+    $.__views.name = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "0",
+        id: "name",
+        text: "Event 3"
+    });
+    $.__views.tablerow.add($.__views.name);
+    $.__views.track = Ti.UI.createLabel({
+        color: "black",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        top: "30",
+        id: "track",
+        text: "Track Information"
+    });
+    $.__views.tablerow.add($.__views.track);
+    $.__views.location = Ti.UI.createLabel({
+        color: "blue",
+        left: "5",
+        font: {
+            fontSize: 18
+        },
+        bottom: "5",
+        id: "location",
+        text: "01/01/01,2:20PM"
+    });
+    $.__views.tablerow.add($.__views.location);
     $.__views.upcomingEventsTable = Ti.UI.createTableView({
-        top: 350,
+        top: 400,
+        data: __alloyId21,
         id: "upcomingEventsTable"
     });
-    $.__views.__alloyId18.add($.__views.upcomingEventsTable);
+    $.__views.__alloyId19.add($.__views.upcomingEventsTable);
     $.__views.bottom_toolbar = Ti.UI.createView({
         layout: "horizontal",
         height: 60,
@@ -141,15 +379,15 @@ function Controller() {
     });
     $.__views.mainWin.add($.__views.bottom_toolbar);
     $.__views.bt_spacer = Ti.UI.createView({
-        width: "20.69%",
+        width: "30.69%",
         id: "bt_spacer"
     });
     $.__views.bottom_toolbar.add($.__views.bt_spacer);
-    $.__views.__alloyId19 = Ti.UI.createView({
+    $.__views.__alloyId22 = Ti.UI.createView({
         width: "16%",
-        id: "__alloyId19"
+        id: "__alloyId22"
     });
-    $.__views.bottom_toolbar.add($.__views.__alloyId19);
+    $.__views.bottom_toolbar.add($.__views.__alloyId22);
     $.__views.topicsIcon = Ti.UI.createImageView({
         top: 8,
         bottom: 8,
@@ -159,27 +397,12 @@ function Controller() {
         id: "topicsIcon",
         image: "/images/menu_64a.png"
     });
-    $.__views.__alloyId19.add($.__views.topicsIcon);
-    $.__views.__alloyId20 = Ti.UI.createView({
+    $.__views.__alloyId22.add($.__views.topicsIcon);
+    $.__views.__alloyId23 = Ti.UI.createView({
         width: "16%",
-        id: "__alloyId20"
+        id: "__alloyId23"
     });
-    $.__views.bottom_toolbar.add($.__views.__alloyId20);
-    $.__views.favoritesIcon = Ti.UI.createImageView({
-        top: 8,
-        bottom: 8,
-        left: 15,
-        height: 32,
-        width: 32,
-        id: "favoritesIcon",
-        image: "/images/star_64a.png"
-    });
-    $.__views.__alloyId20.add($.__views.favoritesIcon);
-    $.__views.__alloyId21 = Ti.UI.createView({
-        width: "16%",
-        id: "__alloyId21"
-    });
-    $.__views.bottom_toolbar.add($.__views.__alloyId21);
+    $.__views.bottom_toolbar.add($.__views.__alloyId23);
     $.__views.tipIcon = Ti.UI.createImageView({
         top: 8,
         bottom: 8,
@@ -189,12 +412,12 @@ function Controller() {
         id: "tipIcon",
         image: "/images/share_64a.png"
     });
-    $.__views.__alloyId21.add($.__views.tipIcon);
-    $.__views.__alloyId22 = Ti.UI.createView({
+    $.__views.__alloyId23.add($.__views.tipIcon);
+    $.__views.__alloyId24 = Ti.UI.createView({
         width: "16%",
-        id: "__alloyId22"
+        id: "__alloyId24"
     });
-    $.__views.bottom_toolbar.add($.__views.__alloyId22);
+    $.__views.bottom_toolbar.add($.__views.__alloyId24);
     $.__views.settingsIcon = Ti.UI.createImageView({
         top: 8,
         bottom: 8,
@@ -204,7 +427,7 @@ function Controller() {
         id: "settingsIcon",
         image: "/images/gear_64a.png"
     });
-    $.__views.__alloyId22.add($.__views.settingsIcon);
+    $.__views.__alloyId24.add($.__views.settingsIcon);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.todaysEventsTable.addEventListener("click", function(e) {
@@ -222,7 +445,7 @@ function Controller() {
         height: 50
     });
     togglebutton_today.addEventListener("click", function(e) {
-        if ($.upcomingEventsTable.visible) {
+        if ($.todaysEventsTable.visible) {
             $.todaysEventsTable.hide();
             togglebutton_today.setBackgroundImage("/images/expander_open_holo_dark.9.png");
         } else {
@@ -296,34 +519,6 @@ function Controller() {
     $.upcomingEventsView.add(togglebutton_upcoming);
     $.upcomingEventsView.add(upcomingtext);
     $.upcomingEventsView.add(upcomingpicker);
-    var todaysdata = [];
-    for (var i = 0; i < 4; i++) {
-        row = Ti.UI.createTableViewRow({
-            title: "Todays Events " + i,
-            font: {
-                fontFamily: "Helvetica Neue",
-                fontSize: 18,
-                fontWeight: "bold",
-                color: "black"
-            }
-        });
-        todaysdata.push(row);
-    }
-    $.todaysEventsTable.setData(todaysdata);
-    var upcomingdata = [];
-    for (var i = 4; i < 10; i++) {
-        row = Ti.UI.createTableViewRow({
-            title: "Upcoming Events " + i,
-            font: {
-                fontFamily: "Helvetica Neue",
-                fontSize: 18,
-                fontWeight: "bold",
-                color: "black"
-            }
-        });
-        upcomingdata.push(row);
-    }
-    $.upcomingEventsTable.setData(upcomingdata);
     var eventdata = [];
     eventdata[0] = Ti.UI.createPickerRow({
         title: "Show All"
@@ -340,15 +535,9 @@ function Controller() {
     $.topicsIcon.addEventListener("touchend", function() {
         $.topicsIcon.setImage("/images/menu_64a.png");
     });
-    $.topicsIcon.addEventListener("click", function() {});
-    $.favoritesIcon.addEventListener("touchstart", function() {
-        $.favoritesIcon.setImage("/images/star_64.png");
-    });
-    $.favoritesIcon.addEventListener("touchend", function() {
-        $.favoritesIcon.setImage("/images/star_64a.png");
-    });
-    $.favoritesIcon.addEventListener("click", function() {
-        !Alloy.isHandheld;
+    $.topicsIcon.addEventListener("click", function() {
+        var w = Alloy.createController("myevents").getView();
+        w.open();
     });
     !Alloy.isHandheld;
     $.tipIcon.addEventListener("touchstart", function() {

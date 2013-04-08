@@ -2,7 +2,7 @@
 	
 	top: 0,
 	zIndex: 100,
-	title: 'Favorites',
+	title: 'Contact Support',
 	layout: 'vertical',
 	backgroundColor: '#fff',
 	navBarHidden: false

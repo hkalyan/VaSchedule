@@ -2,7 +2,7 @@
 	<Window title="Welcome" platform =android id="loginWin">
 		<ScrollView>
 		<ImageView id="va_logo" image="/images/va_logo.png" />
-			<Label id="welcome_Text"></Label>
+		<ImageView id="vehu_logo" image="/images/myvehulogo.jpg" />
 			<TableView platform=android>
 				<TableViewRow platform=android leftImage="/images/man_64.png">
 					<TextField platform=android id="name"></TextField>

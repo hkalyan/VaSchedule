@@ -5,13 +5,11 @@ function Controller() {
     $.__views.addTipWinWrapper = Ti.UI.createWindow({
         top: 0,
         zIndex: 100,
-        title: "Contact Technical Supprot",
+        title: "Contact Technical Support",
         layout: "vertical",
         backgroundColor: "#fff",
         navBarHidden: !1,
-        id: "addTipWinWrapper",
-        modal: "true",
-        tabBarHidden: "false"
+        id: "addTipWinWrapper"
     });
     $.addTopLevelView($.__views.addTipWinWrapper);
     $.__views.headerLabel = Ti.UI.createLabel({

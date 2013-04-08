@@ -5,12 +5,11 @@ function Controller() {
     $.__views.attachmentsWrapper = Ti.UI.createWindow({
         top: 0,
         zIndex: 100,
+        title: "Downloads",
         layout: "vertical",
         backgroundColor: "#fff",
         navBarHidden: !1,
-        id: "attachmentsWrapper",
-        modal: "true",
-        title: "Attachment"
+        id: "attachmentsWrapper"
     });
     $.addTopLevelView($.__views.attachmentsWrapper);
     $.__views.__alloyId1 = Ti.UI.createTableViewRow({

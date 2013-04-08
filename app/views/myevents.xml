@@ -1,28 +1,20 @@
 <Alloy>
-	<Window title="Articles" id="mainWin" navBarHidden="true" exitOnClose="true">
-		<TableView id="searchbarandroid">
-			<TableViewRow>
-			<TextField id="searchtext"></TextField>
-			<Button id="searchbutton"/>
-			</TableViewRow>
-	</TableView>
-	<!--	<Picker id="eventtypepicker" align ="center" top="70">   
-      </Picker> -->
+	<Window title="My Events" id="myevents">
 		<View class="tableViewWrapper">
 			<View id="todaysEventsView" backgroundColor='#222' >
 			</View>	
 				<TableView id="todaysEventsTable" platform=android>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 1"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
 					</TableViewRow>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 2"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
 					</TableViewRow>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 3"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
@@ -32,17 +24,17 @@
 				<View id="upcomingEventsView" backgroundColor='#222'>
 				</View>	
 				<TableView id="upcomingEventsTable" platform=android>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 1"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
 					</TableViewRow>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 2"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
 					</TableViewRow>
-					<TableViewRow id="tablerow" platform=android >
+					<TableViewRow platform=android >
 						<Label class="eventname" left ="5" top="0" id="name" text="Event 3"/>
 						<Label class="eventdetails" left ="5" top="30" id="track" text="Track Information"/>
 						<Label class="time" left ="5" bottom="5" id="location" color='blue' text="01/01/01,2:20PM"/>
@@ -51,17 +43,5 @@
 				</TableView>
 			</View>
 		
-		<View id="bottom_toolbar" platform="android">
-			<View id="bt_spacer" />
-			<View class="bt_icon_wrapper">
-				<ImageView id="topicsIcon" image="/images/menu_64a.png" />
-			</View>
-			<View class="bt_icon_wrapper">
-				<ImageView id="tipIcon" image="/images/share_64a.png" />
-			</View>
-			<View class="bt_icon_wrapper">
-				<ImageView id="settingsIcon" image="/images/gear_64a.png" />
-			</View>
-		</View>
 	</Window>
 </Alloy>

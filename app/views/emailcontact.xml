@@ -1,4 +1,12 @@
 <Alloy>
-	<View class="container">
-	</View>
+    
+           <Window id="emailcontact" title="Send Email" >
+           		<Label left="10" id="subjectLabel"/>
+           		<TextField borderColor='black' left="10" width="80%">
+           		<Label left="10" id="messageLabel"/>
+				<TextArea borderColor='black' value="\n\n\n\n Sincerely,\n John Doe.\n College,University\n jdoe@va.com" id="userTip" />
+				<Button id="sendButton" />
+            </Window>
+
+   
 </Alloy>

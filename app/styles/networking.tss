@@ -3,6 +3,7 @@
 	top: 0,
 	zIndex: 100,
 	layout: 'vertical',
+	title: 'Virtual Networking',
 	backgroundColor: '#fff',
 	navBarHidden: false
 },

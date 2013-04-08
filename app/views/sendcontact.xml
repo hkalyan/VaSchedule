@@ -1,4 +1,12 @@
 <Alloy>
-	<View class="container">
-	</View>
+    
+           <Window id="sendcontact" title="Send Contact Information" >
+           		<Label left="10" id="subjectLabel"/>
+           		<TextField borderColor='black' left="10" value="Contact Information for John Doe" width="80%">
+           		<Label left="10" id="messageLabel"/>
+				<TextArea borderColor='black' value=" Hello,\n I have provided my contact information below. I look \n forward to hearing from you. \n\n Sincerely,\n John Doe.\n College,University\n jdoe@va.com" id="userTip" />
+				<Button id="sendButton" />
+            </Window>
+
+   
 </Alloy>

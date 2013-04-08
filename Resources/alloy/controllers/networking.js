@@ -6,20 +6,19 @@ function Controller() {
         top: 0,
         zIndex: 100,
         layout: "vertical",
+        title: "Virtual Networking",
         backgroundColor: "#fff",
         navBarHidden: !1,
-        id: "networkingWrapper",
-        modal: "true",
-        title: "Online Users"
+        id: "networkingWrapper"
     });
     $.addTopLevelView($.__views.networkingWrapper);
-    $.__views.__alloyId29 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId50 = Ti.UI.createTableViewRow({
         leftImage: "/images/presence_online.png",
         height: 80,
-        id: "__alloyId29"
+        id: "__alloyId50"
     });
-    var __alloyId30 = [];
-    __alloyId30.push($.__views.__alloyId29);
+    var __alloyId51 = [];
+    __alloyId51.push($.__views.__alloyId50);
     $.__views.name = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -31,7 +30,7 @@ function Controller() {
         id: "name",
         text: "Mary Lambert"
     });
-    $.__views.__alloyId29.add($.__views.name);
+    $.__views.__alloyId50.add($.__views.name);
     $.__views.location = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -43,31 +42,31 @@ function Controller() {
         id: "location",
         text: "Norfolk,VA"
     });
-    $.__views.__alloyId29.add($.__views.location);
-    $.__views.__alloyId31 = Ti.UI.createButton({
+    $.__views.__alloyId50.add($.__views.location);
+    $.__views.email = Ti.UI.createButton({
+        id: "email",
         right: "5",
         top: "5",
         width: "30",
         height: "30",
-        backgroundImage: "/images/mail_64.png",
-        id: "__alloyId31"
+        backgroundImage: "/images/mail_64.png"
     });
-    $.__views.__alloyId29.add($.__views.__alloyId31);
-    $.__views.__alloyId32 = Ti.UI.createButton({
+    $.__views.__alloyId50.add($.__views.email);
+    $.__views.sendcontact = Ti.UI.createButton({
+        id: "sendcontact",
         right: "110",
         top: "2",
         width: "30",
         height: "30",
-        backgroundImage: "/images/sym_contact_card.png",
-        id: "__alloyId32"
+        backgroundImage: "/images/sym_contact_card.png"
     });
-    $.__views.__alloyId29.add($.__views.__alloyId32);
-    $.__views.__alloyId33 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId50.add($.__views.sendcontact);
+    $.__views.__alloyId52 = Ti.UI.createTableViewRow({
         leftImage: "/images/presence_online.png",
         height: 80,
-        id: "__alloyId33"
+        id: "__alloyId52"
     });
-    __alloyId30.push($.__views.__alloyId33);
+    __alloyId51.push($.__views.__alloyId52);
     $.__views.name = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -79,7 +78,7 @@ function Controller() {
         id: "name",
         text: "Victor Skawrozy"
     });
-    $.__views.__alloyId33.add($.__views.name);
+    $.__views.__alloyId52.add($.__views.name);
     $.__views.location = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -91,31 +90,31 @@ function Controller() {
         id: "location",
         text: "Richmond,VA"
     });
-    $.__views.__alloyId33.add($.__views.location);
-    $.__views.__alloyId34 = Ti.UI.createButton({
+    $.__views.__alloyId52.add($.__views.location);
+    $.__views.__alloyId53 = Ti.UI.createButton({
         right: "5",
         top: "5",
         width: "30",
         height: "30",
         backgroundImage: "/images/mail_64.png",
-        id: "__alloyId34"
+        id: "__alloyId53"
     });
-    $.__views.__alloyId33.add($.__views.__alloyId34);
-    $.__views.__alloyId35 = Ti.UI.createButton({
+    $.__views.__alloyId52.add($.__views.__alloyId53);
+    $.__views.__alloyId54 = Ti.UI.createButton({
         right: "110",
         top: "2",
         width: "30",
         height: "30",
         backgroundImage: "/images/sym_contact_card.png",
-        id: "__alloyId35"
+        id: "__alloyId54"
     });
-    $.__views.__alloyId33.add($.__views.__alloyId35);
-    $.__views.__alloyId36 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId52.add($.__views.__alloyId54);
+    $.__views.__alloyId55 = Ti.UI.createTableViewRow({
         leftImage: "/images/presence_online.png",
         height: 80,
-        id: "__alloyId36"
+        id: "__alloyId55"
     });
-    __alloyId30.push($.__views.__alloyId36);
+    __alloyId51.push($.__views.__alloyId55);
     $.__views.name = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -127,7 +126,7 @@ function Controller() {
         id: "name",
         text: "David Guetta"
     });
-    $.__views.__alloyId36.add($.__views.name);
+    $.__views.__alloyId55.add($.__views.name);
     $.__views.location = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -139,31 +138,31 @@ function Controller() {
         id: "location",
         text: "Chicago,IL"
     });
-    $.__views.__alloyId36.add($.__views.location);
-    $.__views.__alloyId37 = Ti.UI.createButton({
+    $.__views.__alloyId55.add($.__views.location);
+    $.__views.__alloyId56 = Ti.UI.createButton({
         right: "5",
         top: "5",
         width: "30",
         height: "30",
         backgroundImage: "/images/mail_64.png",
-        id: "__alloyId37"
+        id: "__alloyId56"
     });
-    $.__views.__alloyId36.add($.__views.__alloyId37);
-    $.__views.__alloyId38 = Ti.UI.createButton({
+    $.__views.__alloyId55.add($.__views.__alloyId56);
+    $.__views.__alloyId57 = Ti.UI.createButton({
         right: "110",
         top: "2",
         width: "30",
         height: "30",
         backgroundImage: "/images/sym_contact_card.png",
-        id: "__alloyId38"
+        id: "__alloyId57"
     });
-    $.__views.__alloyId36.add($.__views.__alloyId38);
-    $.__views.__alloyId39 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId55.add($.__views.__alloyId57);
+    $.__views.__alloyId58 = Ti.UI.createTableViewRow({
         leftImage: "/images/presence_online.png",
         height: 80,
-        id: "__alloyId39"
+        id: "__alloyId58"
     });
-    __alloyId30.push($.__views.__alloyId39);
+    __alloyId51.push($.__views.__alloyId58);
     $.__views.name = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -175,7 +174,7 @@ function Controller() {
         id: "name",
         text: "Taylor Swift"
     });
-    $.__views.__alloyId39.add($.__views.name);
+    $.__views.__alloyId58.add($.__views.name);
     $.__views.location = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -187,34 +186,42 @@ function Controller() {
         id: "location",
         text: "Newyork,NY"
     });
-    $.__views.__alloyId39.add($.__views.location);
-    $.__views.__alloyId40 = Ti.UI.createButton({
+    $.__views.__alloyId58.add($.__views.location);
+    $.__views.__alloyId59 = Ti.UI.createButton({
         right: "5",
         top: "5",
         width: "30",
         height: "30",
         backgroundImage: "/images/mail_64.png",
-        id: "__alloyId40"
+        id: "__alloyId59"
     });
-    $.__views.__alloyId39.add($.__views.__alloyId40);
-    $.__views.__alloyId41 = Ti.UI.createButton({
+    $.__views.__alloyId58.add($.__views.__alloyId59);
+    $.__views.__alloyId60 = Ti.UI.createButton({
         right: "110",
         top: "2",
         width: "30",
         height: "30",
         backgroundImage: "/images/sym_contact_card.png",
-        id: "__alloyId41"
+        id: "__alloyId60"
     });
-    $.__views.__alloyId39.add($.__views.__alloyId41);
-    $.__views.__alloyId28 = Ti.UI.createTableView({
-        data: __alloyId30,
+    $.__views.__alloyId58.add($.__views.__alloyId60);
+    $.__views.__alloyId49 = Ti.UI.createTableView({
+        data: __alloyId51,
         top: "20",
         height: "85%",
-        id: "__alloyId28"
+        id: "__alloyId49"
     });
-    $.__views.networkingWrapper.add($.__views.__alloyId28);
+    $.__views.networkingWrapper.add($.__views.__alloyId49);
     exports.destroy = function() {};
     _.extend($, $.__views);
+    $.email.addEventListener("click", function(e) {
+        var w = Alloy.createController("emailcontact").getView();
+        w.open();
+    });
+    $.sendcontact.addEventListener("click", function(e) {
+        var w = Alloy.createController("sendcontact").getView();
+        w.open();
+    });
     _.extend($, exports);
 }
 

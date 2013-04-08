@@ -5,24 +5,24 @@ function Controller() {
     $.__views.eventDetailsWrapper = Ti.UI.createWindow({
         top: 0,
         zIndex: 100,
-        title: "Event Details",
         layout: "vertical",
+        title: "Event Details",
         backgroundColor: "#fff",
         navBarHidden: !1,
         id: "eventDetailsWrapper"
     });
     $.addTopLevelView($.__views.eventDetailsWrapper);
-    $.__views.__alloyId8 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId31 = Ti.UI.createTableViewSection({
         headerTitle: "Description",
-        id: "__alloyId8"
+        id: "__alloyId31"
     });
-    var __alloyId9 = [];
-    __alloyId9.push($.__views.__alloyId8);
-    $.__views.__alloyId10 = Ti.UI.createTableViewRow({
+    var __alloyId32 = [];
+    __alloyId32.push($.__views.__alloyId31);
+    $.__views.__alloyId33 = Ti.UI.createTableViewRow({
         height: "80",
-        id: "__alloyId10"
+        id: "__alloyId33"
     });
-    $.__views.__alloyId8.add($.__views.__alloyId10);
+    $.__views.__alloyId31.add($.__views.__alloyId33);
     $.__views.description = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
@@ -34,17 +34,17 @@ function Controller() {
         text: "The Care Assessment Need (CAN) score reflects a patient’s estimated probability ",
         id: "description"
     });
-    $.__views.__alloyId10.add($.__views.description);
-    $.__views.__alloyId11 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId33.add($.__views.description);
+    $.__views.__alloyId34 = Ti.UI.createTableViewSection({
         headerTitle: "Objectives",
-        id: "__alloyId11"
+        id: "__alloyId34"
     });
-    __alloyId9.push($.__views.__alloyId11);
-    $.__views.__alloyId12 = Ti.UI.createTableViewRow({
+    __alloyId32.push($.__views.__alloyId34);
+    $.__views.__alloyId35 = Ti.UI.createTableViewRow({
         height: "120",
-        id: "__alloyId12"
+        id: "__alloyId35"
     });
-    $.__views.__alloyId11.add($.__views.__alloyId12);
+    $.__views.__alloyId34.add($.__views.__alloyId35);
     $.__views.description = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
@@ -56,17 +56,17 @@ function Controller() {
         text: "1)Acquaint the primary care leaders and care managers about the Care Assessment Need Score and the Patient Care Assessment",
         id: "description"
     });
-    $.__views.__alloyId12.add($.__views.description);
-    $.__views.__alloyId13 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId35.add($.__views.description);
+    $.__views.__alloyId36 = Ti.UI.createTableViewSection({
         headerTitle: "Audience",
-        id: "__alloyId13"
+        id: "__alloyId36"
     });
-    __alloyId9.push($.__views.__alloyId13);
-    $.__views.__alloyId14 = Ti.UI.createTableViewRow({
+    __alloyId32.push($.__views.__alloyId36);
+    $.__views.__alloyId37 = Ti.UI.createTableViewRow({
         height: "50",
-        id: "__alloyId14"
+        id: "__alloyId37"
     });
-    $.__views.__alloyId13.add($.__views.__alloyId14);
+    $.__views.__alloyId36.add($.__views.__alloyId37);
     $.__views.description = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
@@ -78,18 +78,18 @@ function Controller() {
         text: "Clinical Staff",
         id: "description"
     });
-    $.__views.__alloyId14.add($.__views.description);
-    $.__views.__alloyId15 = Ti.UI.createTableViewSection({
+    $.__views.__alloyId37.add($.__views.description);
+    $.__views.__alloyId38 = Ti.UI.createTableViewSection({
         headerTitle: "Downloads",
-        id: "__alloyId15"
+        id: "__alloyId38"
     });
-    __alloyId9.push($.__views.__alloyId15);
+    __alloyId32.push($.__views.__alloyId38);
     $.__views.downloads = Ti.UI.createTableViewRow({
         id: "downloads",
         height: "50",
         rightImage: "/images/ic_go_search_api_holo_light.png"
     });
-    $.__views.__alloyId15.add($.__views.downloads);
+    $.__views.__alloyId38.add($.__views.downloads);
     $.__views.attachments = Ti.UI.createLabel({
         color: "#444",
         textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
@@ -102,46 +102,15 @@ function Controller() {
         text: "Attachments"
     });
     $.__views.downloads.add($.__views.attachments);
-    $.__views.__alloyId16 = Ti.UI.createTableViewRow({
+    $.__views.__alloyId39 = Ti.UI.createTableViewRow({
         height: "70",
-        id: "__alloyId16"
+        id: "__alloyId39"
     });
-    __alloyId9.push($.__views.__alloyId16);
-    $.__views.registerButton = Ti.UI.createButton({
-        title: "Register",
-        borderColor: "#000",
-        borderRadius: 10,
-        align: "left",
-        backgroundGradient: {
-            type: "linear",
-            colors: [ "#195280", "#003F72" ],
-            startPoint: {
-                x: 0,
-                y: 0
-            },
-            endPoint: {
-                x: 0,
-                y: "100%"
-            },
-            backFillStart: !1
-        },
-        shadowColor: "#000",
-        shadowOffset: {
-            x: 1,
-            y: 1
-        },
-        color: "#fff",
-        width: 150,
-        height: 60,
-        left: "10",
-        id: "registerButton"
-    });
-    $.__views.__alloyId16.add($.__views.registerButton);
+    __alloyId32.push($.__views.__alloyId39);
     $.__views.shareButton = Ti.UI.createButton({
         title: "Share",
         borderColor: "#000",
         borderRadius: 10,
-        align: "right",
         backgroundGradient: {
             type: "linear",
             colors: [ "#195280", "#003F72" ],
@@ -163,16 +132,15 @@ function Controller() {
         color: "#fff",
         width: 150,
         height: 60,
-        right: "10",
         id: "shareButton"
     });
-    $.__views.__alloyId16.add($.__views.shareButton);
-    $.__views.__alloyId7 = Ti.UI.createTableView({
-        data: __alloyId9,
+    $.__views.__alloyId39.add($.__views.shareButton);
+    $.__views.__alloyId30 = Ti.UI.createTableView({
+        data: __alloyId32,
         height: "85%",
-        id: "__alloyId7"
+        id: "__alloyId30"
     });
-    $.__views.eventDetailsWrapper.add($.__views.__alloyId7);
+    $.__views.eventDetailsWrapper.add($.__views.__alloyId30);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.downloads.addEventListener("click", function(e) {

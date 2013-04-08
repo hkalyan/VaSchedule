@@ -19,7 +19,7 @@ $.upcomingEventsTable.addEventListener('click',function(e){
     height: 50
 	});
 	togglebutton_today.addEventListener('click',function(e){
-		if($.upcomingEventsTable.visible)
+		if($.todaysEventsTable.visible)
 		{
 			$.todaysEventsTable.hide();
 			togglebutton_today.setBackgroundImage("/images/expander_open_holo_dark.9.png");
@@ -104,28 +104,7 @@ $.upcomingEventsTable.addEventListener('click',function(e){
     $.upcomingEventsView.add(upcomingpicker);
     
 // use a loop to add some rows
-var todaysdata=[];
-for (var i=0; i < 4; i++) {
-	row = Ti.UI.createTableViewRow({
-		title:'Todays Events '+i,
-		font:{fontFamily:'Helvetica Neue',fontSize:18,fontWeight:'bold', color: 'black'},
-	});
-	//row.add(picker);
-	todaysdata.push(row);
-}
 
-$.todaysEventsTable.setData(todaysdata);
-
-var upcomingdata=[];
-for (var i=4; i < 10; i++) {
-	row = Ti.UI.createTableViewRow({
-		title:'Upcoming Events '+i,
-		font:{fontFamily:'Helvetica Neue',fontSize:18,fontWeight:'bold', color: 'black'},
-	});
-	upcomingdata.push(row);
-}
-
-$.upcomingEventsTable.setData(upcomingdata);
 
 var eventdata = [];
 eventdata[0]=Ti.UI.createPickerRow({title:'Show All'});
@@ -144,24 +123,10 @@ $.topicsIcon.addEventListener('touchend', function() {
 });
 
 $.topicsIcon.addEventListener('click', function() {
+	var w = Alloy.createController('myevents').getView();
+    w.open();
 });
 
-$.favoritesIcon.addEventListener('touchstart', function() {
-    $.favoritesIcon.setImage('/images/star_64.png');
-});
-
-$.favoritesIcon.addEventListener('touchend', function() {
-    $.favoritesIcon.setImage('/images/star_64a.png');
-});
-
-$.favoritesIcon.addEventListener('click', function() {
-    if ((OS_IOS||OS_ANDROID) && Alloy.isHandheld) {
-        //$.favoritesDialog.show();
-        
-      
-   
-    }
-});
 
 function openFavoritesWin() {
     var w = Alloy.createController('favorites').getView();

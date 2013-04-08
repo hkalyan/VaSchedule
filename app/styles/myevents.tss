@@ -1,0 +1,63 @@
+
+
+"#myevents": {
+	top: 0,
+	zIndex: 100,
+	title: 'My Events',
+	backgroundColor: '#fff',
+	navBarHidden: false,
+
+	backgroundGradient: {
+        type: 'radial',
+        startPoint: { x: '50%', y: '50%' },
+        endPoint: { x: '50%', y: '50%' },
+        colors: [ '#fff', '#bbb'],
+        startRadius: '90%',
+        endRadius: 0,
+        backfillStart: true
+    }
+},
+
+".eventname":{
+	font:{fontSize:24},
+	
+},
+".eventdetails":{
+	font:{fontSize:18},
+	
+},
+
+".tableViewWrapper": {
+    top: 0,
+},
+"#todaysEventsView": {
+    top: 10,
+    height:55
+},
+"#todaysEventsTable": {
+    top: 90,
+},
+"#upcomingEventsView": {
+    top: 330,
+    height:55,
+},
+"#upcomingEventsTable": {
+    top: 400,
+},
+".eventdetails":{
+	font:{fontSize:18,color:'blue'},
+	
+},
+".time":{
+	font:{fontSize:18,color:'red'},
+	
+},
+"Label": {
+	color: "#444",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+	font : { fontSize: 24, font: 'sans-serif' },
+},
+"TableViewRow":{
+	rightImage:"/images/ic_go_search_api_holo_light.png",
+	height:80
+},

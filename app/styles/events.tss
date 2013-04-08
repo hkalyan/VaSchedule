@@ -78,7 +78,7 @@
 	width: '17.69%'
 },
 "#bt_spacer[platform=android]": {
-	width: '20.69%'
+	width: '30.69%'
 },
 ".bt_icon_wrapper": {
 	width: '20%'
@@ -112,11 +112,11 @@
 },
 
 "#upcomingEventsView": {
-    top: 300,
+    top: 330,
     height:55,
 },
 "#upcomingEventsTable": {
-    top: 350,
+    top: 400,
 },
 "#eventrow": {
 	alignment: 'horizontal',
@@ -140,6 +140,11 @@
 		
 	}
 	
-}
+},
+"#tablerow":{
+	rightImage:"/images/ic_go_search_api_holo_light.png",
+	height:80
+},
+
 
 

@@ -1,6 +1,6 @@
 <Alloy>
     
-           <Window id="networkingWrapper" modal="true" title="Online Users">
+           <Window id="networkingWrapper" title="Virtual Networking">
            	
 			<TableView top="20" platform=android height="85%">
 				<TableViewRow platform=android >

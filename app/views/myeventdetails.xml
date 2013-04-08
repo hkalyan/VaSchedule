@@ -24,8 +24,7 @@
 				</TableViewRow>
 				</TableViewSection>
 				<TableViewRow height="70">
-					<Button left="10" id="registerButton" />
-					<Button right="10" id="shareButton" />
+					<Button id="shareButton" />
 				</TableViewRow>
 			</TableView>
            		
